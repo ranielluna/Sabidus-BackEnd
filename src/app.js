@@ -19,8 +19,7 @@ mongoose.connect(dbURI)
   });
 
 try {
-  const usuarioRotas = require('./src/rotas/usuarioRotas');
-
+  const usuarioRotas = require('./rotas/usuarioRotas');
   app.use("/usuarios", usuarioRotas);
   console.log("Rotas carregadas com sucesso!");
 } catch (erro) {
